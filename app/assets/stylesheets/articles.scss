@@ -16,7 +16,18 @@ body {
   background-color: white;
   margin: 20px auto;
   width: 400px;
-  padding: 5px;
+  padding: 5px 15px ;
+}
+
+.form {
+  background-color: white;
+  margin: 20px auto;
+  width: 400px;
+  padding: 15px 25px;
+}
+
+.field > input {
+  width: 300px;
 }
 
 ul > li > a {
@@ -27,15 +38,16 @@ ul > li > a {
 
 .btn {
   text-decoration: none;
-  color: #161d6f;
+  color: white;
   font-weight: bold;
   padding: 5px 15px;
-  background-color: #c7ffd8;
+  background-color: #ec4646;
   border-radius: 8px;
+  margin-left: 10px;
 }
 
 .btn:hover {
-  background-color: #98ded9;
+  background-color: #663f3f;
 }
 
 a:hover {
@@ -45,4 +57,10 @@ a:hover {
 ul {
   list-style-type: none;
 
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }

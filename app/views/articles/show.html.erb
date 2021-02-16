@@ -6,7 +6,9 @@
   <p><%= @article.content %></p>
 
 </div>
+<div class="buttons">
+  <%= link_to "Delete this article", article_path(@article) , method: :delete, data: { confirm: "Are you sure?"}, class: "btn"  %> <br>
+  <%= link_to "Edit this article", edit_article_path(@article), class: "btn"  %> <br>
+  <%= link_to "Back to articles", articles_path, class: "btn" %>
 
-<%= link_to "Delete this article", article_path(@article) , method: :delete, data: { confirm: "Are you sure?"}, class: "btn"  %> <br>
-<%= link_to "Edit this article", edit_article_path(@article), class: "btn"  %> <br>
-<%= link_to "Back to articles", articles_path, class: "btn" %>
+</div>
